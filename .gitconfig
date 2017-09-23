@@ -1,0 +1,9 @@
+[user]
+  email = josso_t@epita.fr
+  name = Thomas Josso
+[push]
+  default = simple
+[core]
+  editor = vim
+[rerere]
+  enabled = true

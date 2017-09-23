@@ -1,0 +1,28 @@
+control!
+control.cancel! 1-4
+control.checkgroups!
+control.newgroup!
+control.rmgroup!
+junk!
+local.general!
+local.test! 1
+assistants.pre-rentree-apping! 1-113
+assistants.pre-rentree! 1-159
+assistants.piscine: 1-2362,2368,2372-2373,2375-2384,2386-2387,2390-2392,2394
+assistants.projets: 1
+assistants.news: 1-539,542,546
+test: 1-407,825
+cri.news! 1-6
+cri.exercises!
+labos.lse!
+assos.bde!
+delation:
+cours.ccmp!
+announcement.sup!
+announcement.spe!
+announcement.ing1!
+announcement.ing2!
+announcement.ing3!
+assos.gconfs!
+assistants.ateliers.cpp!
+assistants.tiger!

@@ -1,0 +1,26 @@
+% Charset configuration
+charset config "utif-8"
+charset display "utf-8"
+charset outgoing "utf-8"
+
+%User configuration
+%For : Xavier Loginard <login_x@epita.fr>
+set username "josso_t"
+set hostname "acu.epita.fr"
+set realname "Thomas Josso"
+set replyto "josso_t@acu.epita.fr"
+
+% Set the location of your signature:
+set signature ".signature"
+
+% Set your preferred editor
+% slrn replace %s by the file and %d by the line number
+set editor_command "vim +%d %s"
+
+% Set the threading and sorting method
+% 9: thread, then sort by date with most recent first
+% Others exist, it's up to you to choose the one you prefer
+set sorting_method 9
+set uncollapse_threads 1
+
+visible_headers "From:,Subject:,Newsgroups:,Followup-To:,Message-Id:,User-Agent:"
