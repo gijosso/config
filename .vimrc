@@ -56,14 +56,23 @@ set showcmd
 set ruler
 set shm=atI
 
+
+
 "cosmetic"
-set background=dark
+
+"THEME SETTINGS"
 "let g:solarized_visibility="high"
 let g:solarized_contrast="high"
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_degrade=256
-colorscheme solarized
+
+let g:onedark_termcolors=256
+let g:onedark_terminal_italics=1
+
+"set background=dark
+colorscheme onedark
+
 
 "Coding style EPITA 2018"
 "set textwidth=79"
@@ -81,7 +90,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smarttab
-set noexpandtab
+"set noexpandtab
 
 set list
 set autoindent
@@ -112,11 +121,11 @@ execute pathogen#infect()
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_loc_list_height=1
+let g:syntastic_loc_list_height= 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -Wall -Wextra -Werror -std=c++11 -stdlib=libc++'
@@ -137,5 +146,5 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 "Vim airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='deus'
+let g:airline_theme='onedark'
 "let g:airline_theme='base16'
