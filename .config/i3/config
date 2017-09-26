@@ -181,7 +181,9 @@ bar {
 #custom
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton
-#exec --no-startup-id redshift-gtk
+#exec --not-startup-id fluxgui
+exec --no-startup-id redshift-gtk
+exec --no-startup-id nm-applet
 exec ~/.startup.sh
 
 # Pulse Audio controls
