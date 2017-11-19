@@ -60,10 +60,6 @@ export PYHTONPATH=$PYTHONPATH:/usr/local/lib/python2.7/dist-packages
 
 # zsh coloration activaton
 plugins=(git git-flow git_remote_branch docker brew node yarn symfony2 sudo python github)
-
-# Dirty fluxgui fix
-
-
 #User configuration
 export NO_AT_BRIDGE=1
 
@@ -124,7 +120,10 @@ alias refresh='source ~/.zshrc'
 alias gdb='gdb -q'
 #alias valgrind='~/.my_bin/valgrind-color.sh'
 alias untar='tar -xvf'
+#alias sshacu='ssh -x josso_t@acu.epita.fr'
+alias sshacu='ssh acu'
 alias remake='make -B'
+alias powersave='sudo pm-powersave true'
 
 #raccourcis git (also in ~/.gitconfig !)
 alias gl='git log'
@@ -151,7 +150,9 @@ alias gss='git submodule sync'
 alias gurl='git config --get remote.origin.url'
 
 #dual screen
-alias screen='xrandr --auto --output HDMI1 --mode 1680x1050 --right-of eDP1'
+alias left-screen='xrandr --auto --output HDMI-1-1 --left-of eDP-1-1'
+alias right-screen='xrandr --auto --output HDMI-1-1 --right-of eDP-1-1'
+#alias screen='xrandr --auto --output HDMI1 --mode 1680x1050 --right-of eDP1'
 
 #virtual env
 alias envac='source env/bin/activate'

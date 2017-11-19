@@ -121,8 +121,10 @@ bindsym $mod+Shift+0 move container to workspace 0-Misc
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart; if [ "$SHELL"=="/usr/bin/zsh" ]; then source ~/.zshrc; fi;
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -185,6 +187,7 @@ exec --no-startup-id compton
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 exec ~/.startup.sh
+bindsym $mod+m move workspace to output left
 
 # Pulse Audio controls
 # increase sound volume
