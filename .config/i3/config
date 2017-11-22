@@ -186,8 +186,14 @@ exec --no-startup-id compton
 #exec --not-startup-id fluxgui
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec ~/.startup.sh
 bindsym $mod+m move workspace to output left
+
+# Print screen
+bindsym --release Print exec scrot 'screenshot_$wx$h_%Y-%m-%d.png' -e 'mv $f ~/Images/screenshots/'
+bindsym --release $mod+Print exec scrot -u 'screenshot_$wx$h_%Y-%m-%d.png' -e 'mv $f ~/Images/screenshots/'
+bindsym --release $mod+Shift+Print exec scrot -s 'screenshot_$wx$h_%Y-%m-%d.png' -e 'mv $f ~/Images/screenshots/'
 
 # Pulse Audio controls
 # increase sound volume
